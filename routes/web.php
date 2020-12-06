@@ -15,12 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/check', function(){
-//     $arr = array(
-//         'name'=>'duke',
-//         'age'=>32
-//     );
-//     return view('admin/index',$arr);
-// });
+Route::get('/check', function(){
+    $arr = array(
+        'name'=>'duke',
+        'age'=>32
+    );
+    return view('admin/index',$arr);
+});
 
 Route::get('/user','IndexController@write');
