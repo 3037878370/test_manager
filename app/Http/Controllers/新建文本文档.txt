@@ -1,0 +1,18 @@
+<?php 
+
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+
+class LucasController extends Controller
+{
+
+    public function write($id){
+        $name = "a";
+    	if($id % 2 == 0){
+            return "偶数".$id."++++".$name;
+        }else{
+            return "奇数".$id."++++".$name;
+        }
+    }
+}
